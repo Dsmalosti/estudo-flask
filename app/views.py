@@ -47,7 +47,7 @@ def postNovo():
     if form.validate_on_submit():
         form.save(current_user.id)
         return redirect(url_for('homepage'))
-    return render_template('post_novo.html', form=form)
+    return render_template('post_Novo.html', form=form)
 
 
 @app.route('/post/lista/')
